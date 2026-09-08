@@ -4,55 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James | Personal Website</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding-top: 70px;
-            font-family: Arial, sans-serif;
-        }
+    <title>James | Home</title>
 
-        /* Navigation Bar */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #222;
-            padding: 20px;
-            z-index: 1000;
-        }
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 30px;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <!-- Navigation JavaScript -->
+    <script src="navigation.js" defer></script>
 </head>
+
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About Me</a>
-    </nav>
+    <div class="page-container">
 
-    <!-- Homepage Content -->
-    <main>
-        <h1>James</h1>
+        <!-- ================= HEADER ================= -->
 
-        <h2>About Me</h2>
-        <p>im goated</p>
-    </main>
+        <header>
+
+            <div class="header-top">
+
+                <!-- Logo / Name -->
+                <div class="logo">
+                    James
+                </div>
+
+                <!-- Social Media -->
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">GitHub</a>
+                </div>
+
+            </div>
+
+
+            <!-- Navigation is automatically added here by navigation.js -->
+            <div id="navigation"></div>
+
+        </header>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main>
+
+            <!-- HERO SECTION -->
+
+            <section class="hero">
+
+                <h1>Welcome to My Website</h1>
+
+                <p>
+                    I'm James. This is my personal website where you can
+                    learn more about me and check out some of the projects
+                    I've worked on.
+                </p>
+
+            </section>
+
+
+            <!-- ================= TEASERS ================= -->
+
+            <section class="teasers">
+
+
+                <!-- PROJECTS -->
+
+                <div class="teaser">
+
+                    <h2>My Projects</h2>
+
+                    <p>
+                        Check out some of the projects and work that
+                        I've created.
+                    </p>
+
+                    <a href="projects.html">
+                        View Projects
+                    </a>
+
+                </div>
+
+
+                <!-- ABOUT ME -->
+
+                <div class="teaser">
+
+                    <h2>About Me</h2>
+
+                    <p>
+                        Learn more about me, my interests, and what
+                        I like to do.
+                    </p>
+
+                    <a href="about.html">
+                        About Me
+                    </a>
+
+                </div>
+
+
+                <!-- MORE -->
+
+                <div class="teaser">
+
+                    <h2>More Coming Soon</h2>
+
+                    <p>
+                        This website is still growing. More content
+                        and projects will be added in the future.
+                    </p>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <p>
+                &copy; 2026 James
+            </p>
+
+            <div class="footer-socials">
+
+                <a href="#">Instagram</a>
+
+                <a href="#">GitHub</a>
+
+            </div>
+
+        </footer>
+
+    </div>
 
 </body>
 
