@@ -36,10 +36,19 @@ header {
 }
 
 .logo {
-    border: 2px solid white;
-    padding: 20px 35px;
-    font-size: 38px;
-    font-weight: bold;
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .social-links {
