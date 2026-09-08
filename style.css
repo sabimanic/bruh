@@ -1,0 +1,214 @@
+/* General page setup */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #001f3f;
+    color: white;
+}
+
+/* Main website container - 10% from each edge */
+.page-container {
+    margin: 10vh 10vw;
+    width: 80vw;
+}
+
+/* ---------------- HEADER ---------------- */
+
+header {
+    margin-bottom: 40px;
+}
+
+/* Top row containing logo and social links */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.logo {
+    border: 2px solid white;
+    padding: 20px 35px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.social-links {
+    border: 2px solid white;
+    padding: 12px 25px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+
+#navigation {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.primary-nav {
+    width: 100%;
+    border: 2px solid white;
+    background-color: #001f3f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px;
+    gap: 50px;
+}
+
+.primary-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.primary-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Highlights current page */
+.primary-nav a.active {
+    text-decoration: underline;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero {
+    min-height: 350px;
+    border: 2px solid white;
+
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 22px;
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+/* If you eventually add a hero image */
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ---------------- TEASER SECTIONS ---------------- */
+
+.teasers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.teaser {
+    border: 2px solid white;
+    padding: 25px;
+    min-height: 180px;
+}
+
+.teaser h2 {
+    margin-top: 0;
+}
+
+.teaser p {
+    line-height: 1.5;
+}
+
+.teaser a {
+    color: white;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    border-top: 2px solid white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-socials a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-socials a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 768px) {
+
+    .page-container {
+        margin: 5vh 5vw;
+        width: 90vw;
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .logo,
+    .social-links {
+        text-align: center;
+    }
+
+    .primary-nav {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .teasers {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
