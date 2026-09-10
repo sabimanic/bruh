@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | James</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Shared Navigation -->
+    <script src="navigation.js" defer></script>
+
+    <style>
+        /* Product page specific styling */
+
+        .products-header {
+            margin-bottom: 30px;
+        }
+
+        .products-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            border: 2px solid white;
+            padding: 20px;
+        }
+
+        .product-card img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .product-card h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product-description {
+            line-height: 1.5;
+        }
+
+        .buy-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+
+            border: 2px solid white;
+
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .buy-button:hover {
+            background-color: white;
+            color: #001f3f;
+        }
+
+        /* Tablet */
+        @media (max-width: 900px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="page-container">
+
+        <!-- HEADER -->
+
+        <header>
+
+            <div class="header-top">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/smiley.png" alt="Smiley face logo">
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">GitHub</a>
+                </div>
+
+            </div>
+
+
+            <!-- navigation.js inserts navbar here -->
+            <div id="navigation"></div>
+
+        </header>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main>
+
+            <section class="products-header">
+
+                <h1>Products</h1>
+
+                <p>
+                    Check out some of the products currently available.
+                </p>
+
+            </section>
+
+
+            <!-- PRODUCT GRID -->
+
+            <section class="product-grid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <div class="product-card">
+
+                    <img
+                        src="images/product1.jpg"
+                        alt="Product 1"
+                    >
+
+                    <h2>Product Name</h2>
+
+                    <p class="product-price">$25.00</p>
+
+                    <p class="product-description">
+                        Add a short description of the product here.
+                        Include details such as material, size, or design.
+                    </p>
+
+                    <a href="#" class="buy-button">
+                        Buy Now
+                    </a>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="product-card">
+
+                    <img
+                        src="images/product2.jpg"
+                        alt="Product 2"
+                    >
+
+                    <h2>Product Name</h2>
+
+                    <p class="product-price">$35.00</p>
+
+                    <p class="product-description">
+                        Add a short description of the product here.
+                        You can also include color or sizing information.
+                    </p>
+
+                    <a href="#" class="buy-button">
+                        Buy Now
+                    </a>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div class="product-card">
+
+                    <img
+                        src="images/product3.jpg"
+                        alt="Product 3"
+                    >
+
+                    <h2>Product Name</h2>
+
+                    <p class="product-price">$40.00</p>
+
+                    <p class="product-description">
+                        Add information about what makes this product
+                        unique or worth purchasing.
+                    </p>
+
+                    <a href="#" class="buy-button">
+                        Buy Now
+                    </a>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div class="product-card">
+
+                    <img
+                        src="images/product4.jpg"
+                        alt="Product 4"
+                    >
+
+                    <h2>Product Name</h2>
+
+                    <p class="product-price">$30.00</p>
+
+                    <p class="product-description">
+                        Add your product description here.
+                    </p>
+
+                    <a href="#" class="buy-button">
+                        Buy Now
+                    </a>
+
+                </div>
+
+
+                <!-- PRODUCT 5 -->
+
+                <div class="product-card">
+
+                    <img
+                        src="images/product5.jpg"
+                        alt="Product 5"
+                    >
+
+                    <h2>Product Name</h2>
+
+                    <p class="product-price">$50.00</p>
+
+                    <p class="product-description">
+                        Add your product description here.
+                    </p>
+
+                    <a href="#" class="buy-button">
+                        Buy Now
+                    </a>
+
+                </div>
+
+
+                <!-- PRODUCT 6 -->
+
+                <div class="product-card">
+
+                    <img
+                        src="images/product6.jpg"
+                        alt="Product 6"
+                    >
+
+                    <h2>Product Name</h2>
+
+                    <p class="product-price">$45.00</p>
+
+                    <p class="product-description">
+                        Add your product description here.
+                    </p>
+
+                    <a href="#" class="buy-button">
+                        Buy Now
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                &copy; 2026 James
+            </p>
+
+            <div class="footer-socials">
+                <a href="#">Instagram</a>
+                <a href="#">GitHub</a>
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
