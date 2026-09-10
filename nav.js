@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     navigation.innerHTML = `
         <nav class="primary-nav">
             <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
             <a href="projects.html">Projects</a>
             <a href="about.html">About Me</a>
         </nav>
