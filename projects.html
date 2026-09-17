@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | James</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Shared Navigation -->
+    <script src="navigation.js" defer></script>
+
+    <style>
+
+        /* ================= PROJECTS PAGE ================= */
+
+        .projects-header {
+            margin-bottom: 40px;
+        }
+
+        .projects-header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .projects-header p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+
+        /* Gallery */
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+
+        /* Individual Project */
+
+        .project-card {
+            border: 2px solid white;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+
+        /* Project Image */
+
+        .project-card img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+        }
+
+
+        /* Project Information */
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .project-info p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+
+        /* Project Link */
+
+        .project-link {
+            display: inline-block;
+
+            border: 2px solid white;
+            padding: 10px 16px;
+
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            background-color: white;
+            color: #001f3f;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        /* Tablet */
+
+        @media (max-width: 900px) {
+
+            .project-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            .project-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-header h1 {
+                font-size: 36px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="page-container">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="header-top">
+
+
+            <!-- Logo -->
+
+            <div class="logo">
+
+                <a href="index.html">
+
+                    <img
+                        src="images/smiley.png"
+                        alt="Smiley face logo"
+                    >
+
+                </a>
+
+            </div>
+
+
+            <!-- Social Media -->
+
+            <div class="social-links">
+
+                <a href="#">Instagram</a>
+
+                <a href="#">GitHub</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Navigation added by navigation.js -->
+
+        <div id="navigation"></div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- Page Introduction -->
+
+        <section class="projects-header">
+
+            <h1>My Projects</h1>
+
+            <p>
+                A collection of some of my creative, academic,
+                and personal projects.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= PROJECT GALLERY ================= -->
+
+        <section class="project-gallery">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <img
+                    src="images/project1.jpg"
+                    alt="Project 1"
+                >
+
+                <div class="project-info">
+
+                    <h2>Project One</h2>
+
+                    <p>
+                        A short description explaining what this
+                        project is and what I worked on.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <img
+                    src="images/project2.jpg"
+                    alt="Project 2"
+                >
+
+                <div class="project-info">
+
+                    <h2>Project Two</h2>
+
+                    <p>
+                        A short description explaining the project
+                        and the ideas behind it.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <img
+                    src="images/project3.jpg"
+                    alt="Project 3"
+                >
+
+                <div class="project-info">
+
+                    <h2>Project Three</h2>
+
+                    <p>
+                        Add some information about this project
+                        and what you created.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 4 -->
+
+            <div class="project-card">
+
+                <img
+                    src="images/project4.jpg"
+                    alt="Project 4"
+                >
+
+                <div class="project-info">
+
+                    <h2>Project Four</h2>
+
+                    <p>
+                        Add a description of your project here.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 5 -->
+
+            <div class="project-card">
+
+                <img
+                    src="images/project5.jpg"
+                    alt="Project 5"
+                >
+
+                <div class="project-info">
+
+                    <h2>Project Five</h2>
+
+                    <p>
+                        Add a description of your project here.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 6 -->
+
+            <div class="project-card">
+
+                <img
+                    src="images/project6.jpg"
+                    alt="Project 6"
+                >
+
+                <div class="project-info">
+
+                    <h2>Project Six</h2>
+
+                    <p>
+                        Add a description of your project here.
+                    </p>
+
+                    <a href="#" class="project-link">
+                        View Project
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 James
+        </p>
+
+        <div class="footer-socials">
+
+            <a href="#">Instagram</a>
+
+            <a href="#">GitHub</a>
+
+        </div>
+
+    </footer>
+
+
+</div>
+
+</body>
+
+</html>
